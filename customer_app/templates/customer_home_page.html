@@ -1,94 +1,79 @@
-{% extends 'base.html' %} {% block title %}หน้าแรก{% endblock %} 
-{% blockcontent %}
+{% extends 'base.html' %} {% block title %}หน้าแรก{% endblock %} {% block content %}
 
-<section class="py-5">
+<section class="">
   <div class="container px-4 px-lg-5 my-5">
     <div class="row gx-4 gx-lg-5 align-items-center">
       <div class="col-md-6">
         <img
           class="card-img-top mb-5 mb-md-0"
-          src="https://raw.githubusercontent.com/MPR2014v8/savB/main/static/media/images/handPhoneVerifly.png'"
+          src="https://raw.githubusercontent.com/MPR2014v8/savB/main/static/media/images/human-payment.jpg"
           alt="..."
         />
       </div>
+
       <div class="col-md-6">
-        <div class="small mb-1">SKU: BST-498</div>
-        <h1 class="display-5 fw-bolder">Shop item template</h1>
-        <div class="fs-5 mb-5">
-          <span class="text-decoration-line-through">$45.00</span>
-          <span>$40.00</span>
-        </div>
+        <h2 class="display-5 fw-bolder">
+          ห้ามซื้อขายออนไลน์โดยไม่ใช้ SavB. เด็ดขาด หากคุณไม่อยากโดนโกง!
+        </h2>
+        <br />
         <p class="lead">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-          at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi
-          alias magni, accusamus eius blanditiis delectus ipsam minima ea iste
-          laborum vero?
+          ด้วย SavB.
+          คุณสามารถซื้อและขายอะไรก็ได้อย่างปลอดภัยโดยไม่ต้องเสี่ยงกับการปฏิเสธการชำระเงิน
+          การชำระเงินที่ปลอดภัยอย่างแท้จริง
         </p>
+        <br />
+        <br />
         <div class="d-flex">
-          <input
-            class="form-control text-center me-3"
-            id="inputQuantity"
-            type="num"
-            value="1"
-            style="max-width: 3rem"
-          />
-          <button class="btn btn-outline-dark flex-shrink-0" type="button">
-            <i class="bi-cart-fill me-1"></i>
-            Add to cart
-          </button>
+          <div class="p-2">
+            <button class="btn btn-outline-success flex-shrink-0 btn-lg bg-sucess" type="button">
+              <i class="bi bi-wallet2 me-1"></i>
+              ซื้อสินค้า
+            </button>
+          </div>
+
+          <div class="p-2">
+            <button class="btn btn-outline-primary flex-shrink-0 btn-lg" type="button">
+                <i class="bi bi-bag me-1"></i>
+              ขายสินค้า
+            </button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="py-5 border-bottom" id="features">
+<section class="border-bottom" id="features">
   <div class="container px-5 my-5">
     <div class="row gx-5">
       <div class="col-lg-4 mb-5 mb-lg-0">
         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
-          <i class="bi bi-collection"></i>
+          <i class="bi bi-person-check"></i>
         </div>
-        <h2 class="h4 fw-bolder">Featured title</h2>
+        <h2 class="h4 fw-bolder">ป้องกันความเสี่ยง</h2>
         <p>
-          Paragraph of text beneath the heading to explain the heading. We'll
-          add onto it with another sentence and probably just keep going until
-          we run out of words.
+          ป้องกันความเสี่ยงจากการโอนเงินไปแล้วไม่ได้รับของโดยบริการของเราเป็นระบบชำระเงิน
         </p>
-        <a class="text-decoration-none" href="#!">
-          Call to action
-          <i class="bi bi-arrow-right"></i>
-        </a>
       </div>
       <div class="col-lg-4 mb-5 mb-lg-0">
         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
-          <i class="bi bi-building"></i>
+          <i class="bi bi-hand-thumbs-up"></i>
         </div>
-        <h2 class="h4 fw-bolder">Featured title</h2>
+        <h2 class="h4 fw-bolder">ป้องกันสินค้าไม่ตรงปก</h2>
         <p>
-          Paragraph of text beneath the heading to explain the heading. We'll
-          add onto it with another sentence and probably just keep going until
-          we run out of words.
+          สามารถเช็คสินค้าได้ก่อน หรือใช้บริการของเราหากของไม่ตรงตามรายละเอียด
+          ใช้งานไม่ได้
         </p>
-        <a class="text-decoration-none" href="#!">
-          Call to action
-          <i class="bi bi-arrow-right"></i>
-        </a>
       </div>
       <div class="col-lg-4">
         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
-          <i class="bi bi-toggles2"></i>
+          <i class="bi bi-box2"></i>
         </div>
-        <h2 class="h4 fw-bolder">Featured title</h2>
+        <h2 class="h4 fw-bolder">ป้องกันสินค้าตีกลับ</h2>
         <p>
-          Paragraph of text beneath the heading to explain the heading. We'll
-          add onto it with another sentence and probably just keep going until
-          we run out of words.
+          ลดความเสี่ยงเกิดการตีกลับสินค้า
+          ช่วยให้ผู้ขายไม่ต้องเสียเงินค่าขนส่งฟรีจากการที่ผู้ซื้อ
         </p>
-        <a class="text-decoration-none" href="#!">
-          Call to action
-          <i class="bi bi-arrow-right"></i>
-        </a>
       </div>
     </div>
   </div>
