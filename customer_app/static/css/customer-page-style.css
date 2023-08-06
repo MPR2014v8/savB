@@ -7,15 +7,25 @@
   font-family: "Prompt", sans-serif;
 }
 .navbar {
-  background-color: #537fe7; /* Your desired color */
+  background-color: #11468F; /* Your desired color */
 }
 html {
   box-sizing: border-box;
   font-size: 16px;
 }
 
-.text-b {
-  color: #C0EEF2;
+.navbar-nav .nav-link {
+  color: #ffffff; /* Default link color */
+}
+
+/* Apply styles to navbar links on hover */
+.navbar-nav .nav-link:hover {
+  color: #64CCC5; /* Change link color on hover */
+}
+
+.text-nav {
+  color: #ffffff;
+
 }
 
 *,
