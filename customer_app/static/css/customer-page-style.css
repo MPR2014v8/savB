@@ -1,0 +1,50 @@
+.navbar {
+  background-color: #537fe7; /* Your desired color */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
+* {
+  font-family: "Prompt", sans-serif;
+}
+.navbar {
+  background-color: #537fe7; /* Your desired color */
+}
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.text-b {
+  color: #C0EEF2;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

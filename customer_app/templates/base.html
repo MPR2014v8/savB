@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,58 +16,21 @@
       crossorigin="anonymous"
     />
 
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
-      * {
-        font-family: "Prompt", sans-serif;
-      }
-      html {
-        box-sizing: border-box;
-        font-size: 16px;
-      }
-
-      *,
-      *:before,
-      *:after {
-        box-sizing: inherit;
-      }
-
-      body,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      p,
-      ol,
-      ul {
-        margin: 0;
-        padding: 0;
-        font-weight: normal;
-      }
-
-      ol,
-      ul {
-        list-style: none;
-      }
-
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-    </style>
+    <link rel="stylesheet" href="{% static 'css/customer-page-style.css' %}"/>
 
     <title>{% block title %}My Site{% endblock %}</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-primary bg-primary">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <div>
-          <a href="{% url 'customer:customerHomeView' %}" style="text-decoration: none">
-            <img src="icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          <a class="navbar-brand"  href="{% url 'customer:customerHomeView' %}"
+          style="text-decoration: none">
+            <!-- Logo -->
+            <img src="https://raw.githubusercontent.com/MPR2014v8/savB/main/static/media/icons/sav-icon-no-name.png" alt="Logo" width="60" height="60" class="d-inline-block align-top">
+            <!-- Text -->
             <h4 class="text-white">
-              Sav<span class="text-success">B.</span>
+              Sav<span class="text-b">B.</span>
             </h4>
           </a>
         </div>
@@ -108,9 +73,7 @@
     <div class="container-fluid m-0">
       {% block content-head %} {% endblock %}
     </div>
-    <div class="container">
-      {% block content %} {% endblock %}
-    </div>
+    <div class="container">{% block content %} {% endblock %}</div>
 
     <!-- bootstrap CND -->
     <script
