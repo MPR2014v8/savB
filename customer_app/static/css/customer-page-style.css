@@ -1,16 +1,33 @@
-.custom-toggler .navbar-toggler-icon {
-  background-color: #fff; /* Change the background color */
-  border: #fff; /* Add a border */
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
 
+.custom-toggler .navbar-toggler-icon {
+  background-image: url('https://raw.githubusercontent.com/MPR2014v8/savB/main/static/media/icons/menu-bar-green.png');
 }
 
 /* custom_styles.css */
 .background-image {
   background-image: url('https://raw.githubusercontent.com/MPR2014v8/savB/main/static/media/images/handPhoneVerifly.png');
-  background-size: cover; /* Adjust the image sizing */
+  background-size: auto; /* Adjust the image sizing */
   background-position: center center; /* Center the image */
   background-repeat: no-repeat; /* Prevent repeating the image */
-  min-height: 92vh; /* Make sure the background covers the entire viewport height */
+  max-width: 100%;
+  height: auto;
+}
+
+.feature {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 4rem;
+  font-size: 2rem;
 }
 
 .navbar {
