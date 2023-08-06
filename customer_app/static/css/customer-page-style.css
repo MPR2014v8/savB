@@ -11,17 +11,7 @@
 }
 
 .custom-toggler .navbar-toggler-icon {
-  background-image: url('https://raw.githubusercontent.com/MPR2014v8/savB/main/static/media/icons/menu-bar-green.png');
-}
-
-/* custom_styles.css */
-.background-image {
-  background-image: url('https://raw.githubusercontent.com/MPR2014v8/savB/main/static/media/images/handPhoneVerifly.png');
-  background-size: auto; /* Adjust the image sizing */
-  background-position: center center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent repeating the image */
-  max-width: 100%;
-  height: auto;
+  background-image: url('https://raw.githubusercontent.com/MPR2014v8/savB/main/staticfiles/image/menu-bar-green.png');
 }
 
 .feature {
